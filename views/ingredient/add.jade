@@ -1,0 +1,26 @@
+extends ../layout
+
+script(src='/javascripts/test.js')
+
+block content
+	label name
+	input#name.input(type="text")
+	br
+	label description
+	input#description.input(type="text")
+	br
+	label origin
+	input#origin.input(type="text")
+	br
+	label tags
+	input#tags.input(type="text")
+	br
+	label nutrition
+	input#nutrition.input(type="text")
+	br
+
+
+	button#login(onClick="addIngredient()") Add
+
+	script.
+		createTagAC()

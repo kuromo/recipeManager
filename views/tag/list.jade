@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+	table#ingList.table.table-striped.table-dark
+		tr
+			th name	
+			th description	
+	
+			each value in ingredients
+				tr
+					td= value.name	
+					td= value.description	
+
